@@ -1,0 +1,40 @@
+.page-header {
+        background-color: lightblue;
+        margin-top: 0;
+        padding: 20px 20px 20px 40px;
+
+    }
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+        color: #ffffff;
+        font-size: 36pt;
+        text-decoration: none;
+    }
+
+h2 {
+        font-family: "Courier New", Courier, monospace;
+         margin-left: 420px;
+         padding-top: 50px;
+    }
+h3 {
+        font-family: "Courier New", Courier, monospace;
+         margin-left: 470px;
+
+    }
+body {
+    background-color: CAC9D1;
+
+}
+.parrafo1 {
+  margin-left: 520px;
+  padding-top: 50px;
+}
+.copyright {
+  margin-left: 450px;
+  padding-top: 50px;
+}
+.parrafo2 {
+ margin-left: 500px;
+}
+.link-admin {
+padding-top: 50px;
+}

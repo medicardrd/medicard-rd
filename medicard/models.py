@@ -20,7 +20,7 @@ class Medicard_rd(models.Model):
         self.save()
 
     def __str__(self):
-        return self.Titulo + " " + self.paciente.username
+        return self.Titulo + " " + " " + self.paciente.username + " " + " " + self.doctor.username
 
 class perfil(models.Model):
     Medico_autorizado = 1
