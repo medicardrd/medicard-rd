@@ -56,7 +56,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'pictures')
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['C:/Users/migue_000/medicardrd/medicard/registration',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -103,3 +103,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/pictures/'
+LOGIN_REDIRECT_URL = '/'
