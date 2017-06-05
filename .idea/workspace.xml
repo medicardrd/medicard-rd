@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="379f069e-7308-47fa-a1d3-65c7dee54ddd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/settings.py" afterPath="$PROJECT_DIR$/mysite/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/urls.py" afterPath="$PROJECT_DIR$/mysite/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/medicard/templates/medicard/pagina_inicio.html" afterPath="$PROJECT_DIR$/medicard/templates/medicard/pagina_inicio.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,7 +36,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/medicard/templates/registration/login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
@@ -97,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pagina_inicio.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pagina_inicio.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/medicard/templates/medicard/pagina_inicio.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="57" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="57" />
+            <state relative-caret-position="272">
+              <caret line="22" column="58" lean-forward="false" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -146,12 +144,12 @@
         <option value="$PROJECT_DIR$/medicard/models.py" />
         <option value="$PROJECT_DIR$/medicard/views.py" />
         <option value="$PROJECT_DIR$/medicard/static/css/medicard_rd.css" />
-        <option value="$PROJECT_DIR$/medicard/templates/medicard/pagina_inicio.html" />
         <option value="$PROJECT_DIR$/medicard/templates/medicard/login.html" />
         <option value="$PROJECT_DIR$/mysite/urls.py" />
         <option value="$PROJECT_DIR$/mysite/settings.py" />
         <option value="$PROJECT_DIR$/medicard/static/css/login_medicard.css" />
         <option value="$PROJECT_DIR$/medicard/templates/registration/login.html" />
+        <option value="$PROJECT_DIR$/medicard/templates/medicard/pagina_inicio.html" />
       </list>
     </option>
   </component>
@@ -848,16 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medicard/templates/medicard/pagina_inicio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="57" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="57" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/medicard/static/css/medicard_rd.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -875,6 +863,16 @@
             <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicard/templates/medicard/pagina_inicio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="58" lean-forward="false" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
