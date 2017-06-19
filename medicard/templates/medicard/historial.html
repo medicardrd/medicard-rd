@@ -1,0 +1,145 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Historial Medico Medicard-RD</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body style="background-color:lightblue;">
+<img src="https://pbs.twimg.com/media/DBNXIMsVYAATm1r.jpg" alt="medicard" style="width=80px;height:100px;">
+<ul>
+    <li><a href="http://medicardrd.pythonanywhere.com/admin"><strong>Escribir Historial Medico</strong></a></li>
+    <li><a href="http://medicardrd.pythonanywhere.com/logout">Cerrar sesion</a></li>
+</ul>
+<h1>PERFIL PACIENTE</h1>
+
+    {% for user in filter.qs %}
+    <table style="width:100%" border="1" cellpadding="5" cellspacing="5">
+    <tr>
+        <td>Nombre</td>
+        <td>{{ user.first_name }}</td>
+     </tr>
+    <tr>
+        <td>Apellido</td>
+        <td>{{ user.last_name }}</td>
+    </tr>
+    <tr>
+        <td>Fecha nacimiento</td>
+        <td>{{ user.perfil.Fecha_nacimiento }}</td>
+    </tr>
+    <tr>
+        <td>Cedula</td>
+        <td>{{ user.perfil.Cedula }}</td>
+    </tr>
+    <tr>
+        <td>Sexo</td>
+        <td>{{ user.perfil.Sexo }}</td>
+    </tr>
+    <tr>
+        <td>ARS</td>
+        <td>{{ user.perfil.ARS }}</td>
+    </tr>
+    <tr>
+        <td>Plan ARS</td>
+        <td>{{ user.perfil.Plan_ARS }}</td>
+    </tr>
+    <tr>
+        <td>Tipo de sangre</td>
+        <td>{{user.perfil.Tipo_de_sangre}}</td>
+    </tr>
+    <tr>
+    <td>Patologia</td>
+     <td>{{ user.perfil.Patologia }}</td>
+     </tr>
+    <tr>
+        <td>Medicacion frecuente</td>
+        <td>{{ user.perfil.Medicacion_frecuente }}</td>
+    </tr>
+    <tr>
+        <td>Alergias</td>
+        <td>{{ user.perfil.Alergias }}</td>
+    </tr>
+    <tr>
+        <td>Ultima intervencion quirurgica</td>
+        <td>{{ user.perfil.Ultima_intervencion_quirurgica }}</td>
+    </tr>
+    <tr>
+        <td>Intervenciones quirurgicas</td>
+        <td>{{ user.perfil.Intervenciones_quirurgicas }}</td>
+    </tr>
+    <tr>
+        <td>Centro medico frecuente</td>
+        <td>{{ user.perfil.Centro_medico_frecuente }}</td>
+    </tr>
+    <tr>
+        <td>DR cabecera</td>
+        <td>{{ user.perfil.DR_cabecera }}</td>
+    </tr>
+    <tr>
+        <td># DR cabecera</td>
+        <td>{{ user.perfil.numero_DR_cabecera }}</td>
+    </tr>
+    <tr>
+        <td>Familiar cercano</td>
+        <td>{{ user.perfil.Familiar_cercano }}</td>
+    </tr>
+    <tr>
+        <td># Familiar cercano</td>
+         <td>{{ user.perfil.Numero_familiar_cercano }}</td>
+    </tr>
+    </table>
+    {% endfor %}
+
+    <br><br>
+
+    {% for medicard_rdHistory in filter_2.qs %}
+    <h1>Historial {{medicard_rdHistory.fecha_creacion}}:</h1>
+    <table style="width:100%" border="1" cellpadding="5" cellspacing="5">
+         <tr>
+             <td>Titulo</td>
+             <td>{{medicard_rdHistory.Titulo}}</td>
+         </tr>
+         <tr>
+             <td>Hospital</td>
+             <td>{{medicard_rdHistory.hospital}}</td>
+         </tr>
+         <tr>
+             <td>Area</td>
+             <td>{{medicard_rdHistory.area}}</td>
+         </tr>
+         <tr>
+             <td>Paciente</td>
+             <td>{{medicard_rdHistory.paciente}}</td>
+         </tr>
+         <tr>
+             <td>Doctor</td>
+             <td>{{medicard_rdHistory.doctor}}</td>
+         </tr>
+         <tr>
+             <td>Reporte</td>
+             <td>{{medicard_rdHistory.reporte}}</td>
+         </tr>
+         <tr>
+             <td>Fecha Creacion</td>
+             <td>{{medicard_rdHistory.fecha_creacion}}</td>
+         </tr>
+         <tr>
+             <td>Telefono</td>
+             <td>{{medicard_rdHistory.Telefono}}</td>
+         </tr>
+         <tr>
+             <td>Imagen</td>
+             <td>{{medicard_rdHistory.Imagen}}</td>
+         </tr>
+    </table>
+    <br><br>
+     {% endfor %}
+
+    <div>
+        <i class="material-icons">cloud</i>
+        <i class="material-icons">favorite</i>
+        <i class="material-icons">attachment</i>
+        <i class="material-icons">computer</i>
+        <i class="material-icons">traffic</i>
+    </div>
+</body>
+</html>

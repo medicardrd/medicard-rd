@@ -9,12 +9,12 @@
         text-decoration: none;
     }
 
-h2 {
+h3 {
         font-family: "Courier New", Courier, monospace;
          margin-left: 420px;
          padding-top: 50px;
     }
-h3 {
+h4 {
         font-family: "Courier New", Courier, monospace;
          margin-left: 470px;
 
@@ -29,12 +29,12 @@ body {
   padding-top: 50px;
 }
 .copyright {
-  margin-left: 450px;
+  margin-left: 100px;
   padding-top: 50px;
 }
 .parrafo2 {
  margin-left: 500px;
 }
-.link-admin {
+.link-historial {
 padding-top: 50px;
 }

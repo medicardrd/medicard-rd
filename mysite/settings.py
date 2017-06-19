@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'medicard',
+    'django_filters',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -86,7 +87,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-AR'
 
 TIME_ZONE = 'America/Santo_Domingo'
 
@@ -103,4 +104,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/pictures/'
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = 'search/'

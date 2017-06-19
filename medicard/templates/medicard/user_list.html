@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Historial Medico Medicard-RD</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body style="background-color:lightblue;">
+<ul>
+    <li><a href="http://medicardrd.pythonanywhere.com/admin"><strong>Escribir Historial Medico</strong></a></li>
+    <li><a href="http://medicardrd.pythonanywhere.com/logout">Cerrar sesion</a></li>
+</ul>
+
+<img src="https://pbs.twimg.com/media/DBNXIMsVYAATm1r.jpg" alt="medicard" style="width=80px;height:100px;margin-left:500px;">
+{% block content %}
+<p style="text-align: center;"><strong>Ingrese el ID del usuario, por favor:</strong></p>
+ <form style="text-align: center;" id="search" method="get" action="historial">
+ {{ filter.form.as_p }}
+<button type="submit">Buscar</button>
+ </form>
+<div>
+<i class="material-icons">cloud</i>
+<i class="material-icons">favorite</i>
+<i class="material-icons">attachment</i>
+<i class="material-icons">computer</i>
+<i class="material-icons">traffic</i>
+</div>
+{% endblock %}
+</body>
+</html>

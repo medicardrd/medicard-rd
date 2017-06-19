@@ -3,4 +3,7 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.inicio),
+    url(r'^login/search/$', views.search, name='search'),
+    url(r'^login/search/historial$', views.historial, name='historial'),
+    url(r'^logout/$', views.logout, name='logout'),
 ]
