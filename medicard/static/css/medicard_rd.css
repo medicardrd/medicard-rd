@@ -9,32 +9,16 @@
         text-decoration: none;
     }
 
-h3 {
+h1 {
         font-family: "Courier New", Courier, monospace;
-         margin-left: 420px;
-         padding-top: 50px;
+
     }
-h4 {
+h2 {
         font-family: "Courier New", Courier, monospace;
-         margin-left: 470px;
 
     }
 body {
     /*background-color: CAC9D1;*/
 
     background-image: url("https://pbs.twimg.com/media/DBM7TAFVYAAPnB9.jpg:large");
-}
-.parrafo1 {
-  margin-left: 520px;
-  padding-top: 50px;
-}
-.copyright {
-  margin-left: 100px;
-  padding-top: 50px;
-}
-.parrafo2 {
- margin-left: 500px;
-}
-.link-historial {
-padding-top: 50px;
 }
