@@ -10,8 +10,12 @@ from django.utils import timezone
 
 def inicio(request):
     return render(request, 'medicard/pagina_inicio.html', {})
+
 def logout(request):
     return render(request, 'registration/logout.html')
+
+def medio(request):
+    return render(request, 'registration/medio.html')
 
 def historial(request):
     user_list = User.objects.filter(perfil__rol=2)
