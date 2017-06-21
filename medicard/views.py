@@ -2,8 +2,7 @@ from django.shortcuts import render
 from .models import Medicard_rd
 from django.contrib.auth.models import User
 from .filters import UserFilter, UserFilterMedicard_rd
-from . import models
-from django.utils import timezone
+from django.contrib.sessions.models import Session
 
 # Create your views here.
 
@@ -15,6 +14,7 @@ def logout(request):
     return render(request, 'registration/logout.html')
 
 def medio(request):
+    Session.objects.all().delete()
     return render(request, 'registration/medio.html')
 
 def historial(request):
