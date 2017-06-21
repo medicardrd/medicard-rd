@@ -6,13 +6,36 @@
  <h1 style="color:blue;font-family:verdana;"><strong>Login Historial Medico MEDICARD-RD</strong></h1>
   <img src="https://pbs.twimg.com/media/DBNXIMsVYAATm1r.jpg" alt="medicardere" style="width:500px;height300:px;">
 {% block content %}
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Ingresar</button>
-  </form>
-{% endblock %}
+    <div id="content-container" class="container p-none">
+        <div class="lgn-container col-lg-8">
+            <form id="login-form" method="post"
+                  action="{% url 'django.contrib.auth.views.login' %}">
+                {% csrf_token %}
+                <table class="table">
+                    <tr>
+                        <td><label for="id_username"><strong>Usuario</strong></label></td>
+                        <td><input id="id_username" name="username"
+                                   type="text" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="id_password"><strong>Contraseña</strong></label></td>
+                        <td><input id="id_password" name="password"
+                                   type="password" class="form-control"></td>
+                    </tr>
+                </table>
+                {% if form.errors %}
+                    <p class=" label label-danger">
+                        Su usuario y contraseña no coinciden, por favor intentelo denuevo.
+                    </p>
+                {% endif %}
+
+                <input type="submit" value="Ingresar"
+                       class="btn btn-primary pull-right" />
+                <input type="hidden" name="next" value="{{ next }}" />
+            </form>
+        </div>
+    </div>
  <h2 style="color:black;font-family:verdana;">MEDICARD-RD Derechos Reservados 2017.</h2>
+{% endblock content %}
  </body>
 </html>
-
