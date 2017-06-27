@@ -13,3 +13,6 @@ class UserFilterMedicard_rd(django_filters.FilterSet):
     class Meta:
         model = Medicard_rd
         fields = ['paciente', ]# 'first_name', 'last_name', ]
+
+
+

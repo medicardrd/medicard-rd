@@ -87,9 +87,9 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'es-AR'
+LANGUAGE_CODE = 'es-AR' #Lenguaje a utilizar en Django es-AR (español-argentina).
 
-TIME_ZONE = 'America/Santo_Domingo'
+TIME_ZONE = 'America/Santo_Domingo' #Zona horaria a utilizar por el servidor.
 
 USE_I18N = True
 
@@ -101,7 +101,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-MEDIA_URL = '/pictures/'
-LOGIN_REDIRECT_URL = 'search/'
+STATIC_URL = '/static/' #Ruta para los archivos estaticos.
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')   #Ruta para querysets base de datos.
+MEDIA_URL = '/pictures/' #Ruta para almacenar los archivos cargados al modelo Medicard_rd.
+LOGIN_REDIRECT_URL = 'search/' #Ruta para redireccionar luego de pagina login.
